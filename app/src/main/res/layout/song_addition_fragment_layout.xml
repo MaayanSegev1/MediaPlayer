@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_song_exit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#2196F3"/>
+
+    <TextView
+        android:id="@+id/add_song_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Add new song"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        android:typeface="sans" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_song_cardview"
+        android:layout_width="386dp"
+        android:layout_height="176dp"
+        android:layout_below="@+id/add_song_textview"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/add_song_pic"
+            android:layout_width="381dp"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="@color/black"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_song_fragment_camera"
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/add_song_cardview"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#2196F3"
+        android:src="@drawable/ic_add_a_photo_material" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_song_fragment_gallery"
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/add_song_cardview"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/add_song_fragment_camera"
+        android:backgroundTint="#2196F3"
+        android:src="@drawable/ic_gallery_black_24dp" />
+
+    <TextView
+        android:id="@+id/add_song_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_fragment_camera"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="casual"
+        android:text="Song Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/add_song_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_name_textview"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:hint="Insert song name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/add_song_author_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_name_edittext"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="casual"
+        android:text="More Info"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/add_song_author_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_author_textview"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:hint="Insert more info"
+        android:inputType="text"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/add_song_link_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_author_edittext"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="casual"
+        android:maxLines="1"
+        android:text="Song Link"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/add_song_link_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_song_link_textview"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="casual"
+        android:hint="Insert your song link"
+        android:inputType="textUri"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_song_material_button"
+        android:layout_width="158dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/add_song_link_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Add Song"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:theme="@style/Widget.MaterialComponents.Button.TextButton"
+        android:typeface="sans"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>
